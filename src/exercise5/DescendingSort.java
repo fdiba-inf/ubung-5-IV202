@@ -20,7 +20,7 @@ public class DescendingSort {
           int minIndex = index;
 
           for (int i = index + 1; i< numbers.length; i++) {
-            if (numbers[minIndex] > numbers[i]) {
+            if (numbers[minIndex] < numbers[i]) {
               minIndex = i;
               }
             }
@@ -28,6 +28,7 @@ public class DescendingSort {
             numbers[index] = numbers[minIndex];
             numbers[minIndex] = t;
         }  
+       
         // Sort numbers in descending order
 
         String numbersAsString = Arrays.toString(numbers);
